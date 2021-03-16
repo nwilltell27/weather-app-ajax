@@ -20,7 +20,6 @@ function handleGetData(evt) {
         url:'http://api.openweathermap.org/data/2.5/weather?q=' + userInput + '&APPID=5beacde19077b3b21b0f1838949b741f&units=imperial'
     }).then(
         (data) => {
-            console.log('data', data);
             render(data);
         },
         // failure
