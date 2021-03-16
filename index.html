@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +10,23 @@
     <script defer src="./js/script.js"></script>
     <title>My Weather App</title>
 </head>
+
 <body>
-    <h1>Current Weather Conditions</h1>
+    <header>
+        <h1>The Weather</h1>
+    </header>
     <main>
+        <h2>Current Conditions</h2>
         <p id="city"></p>
         <p id="temp"></p>
         <p id="feel"></p>
         <p id="weather"></p>
+        <form class="searchForm">
+            <input id="citySearch" type="text" placeholder="Enter City" />
+            <input type="submit" value="Get Weather Info" />
+        </form>
     </main>
-    <form>
-        <input type="text" placeholder="Enter City" />
-        <input type="submit" value="Get Weather Info" />
-    </form>
+    <footer>Copyright &copy; 2021 All Rights Reserved</footer>
 </body>
+
 </html>
